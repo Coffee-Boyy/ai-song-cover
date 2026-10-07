@@ -1,0 +1,49 @@
+{
+  "name": "Your singing voice",
+  "runtime_python": "python",
+  "applio": "tools/Applio",
+  "model": "models/voice.pth",
+  "index": "models/voice.index",
+  "ffmpeg": "ffmpeg",
+  "separator_python": "python",
+  "separator_models": "state/separator-models",
+  "separator_model": "mel_band_roformer_karaoke_aufr33_viperx_sdr_10.1956.ckpt",
+  "inference": {
+    "index_rate": 1.0,
+    "protect": 0.5,
+    "volume_envelope": 1.0
+  },
+  "retrieval_backend": "exact",
+  "register_policy": {
+    "center_hz": 420,
+    "ceiling_p90_hz": 750,
+    "ceiling_p99_hz": 950,
+    "floor_median_hz": 200,
+    "floor_p10_hz": 130,
+    "pause_seconds": 0.18,
+    "min_phrase_seconds": 1.2,
+    "transition_cost": 6,
+    "continuity_window_seconds": 8,
+    "octaves": [
+      -24,
+      -12,
+      0,
+      12,
+      24
+    ]
+  },
+  "max_guard_retries": 2,
+  "source_pitch_guard": {
+    "enabled": true
+  },
+  "studio_effects": {
+    "enabled": true
+  },
+  "pitch_polish": {
+    "enabled": true
+  },
+  "audio_cleanup": {
+    "enabled": true
+  },
+  "calibration": "Starting defaults only. Training replaces register limits with estimates from your own TRAIN singing pitch. Edit when necessary."
+}

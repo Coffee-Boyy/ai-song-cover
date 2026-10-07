@@ -1,0 +1,71 @@
+{
+  "references": [
+    {
+      "id": "original",
+      "path": "examples/references/original.mp3",
+      "duration_seconds": 120.34408163265306,
+      "curated_singing_clips": 18,
+      "provenance": "User-supplied recording; cleaned, singing-only training phrases in chronological order with 150 ms separators.",
+      "sha256": "7ac53407b09703f2ca1dc27b714ea451bca16c79146737be1ed1b01f32388b33"
+    },
+    {
+      "id": "second",
+      "path": "examples/references/second.mp3",
+      "duration_seconds": 55.53795918367347,
+      "curated_singing_clips": 8,
+      "provenance": "User-supplied recording; cleaned, singing-only training phrases in chronological order with 150 ms separators.",
+      "sha256": "e556e23f5c05ce6936a32e992a3e65c2fce4ddc23a11b571e5a3b0863302f6f3"
+    },
+    {
+      "id": "primary",
+      "path": "examples/references/primary.mp3",
+      "duration_seconds": 103.62,
+      "curated_singing_clips": 18,
+      "provenance": "User-supplied recording; cleaned, singing-only training phrases in chronological order with 150 ms separators.",
+      "sha256": "d489aed5e657f8185f3f776913a2ae909a68c90c3fce2b8af5e6d35a7c175da0"
+    },
+    {
+      "id": "new01",
+      "path": "examples/references/new01.mp3",
+      "duration_seconds": 125.74,
+      "curated_singing_clips": 20,
+      "provenance": "User-supplied recording; cleaned, singing-only training phrases in chronological order with 150 ms separators.",
+      "sha256": "a1f360f0b13f46e949617803027fbbe7534d4b642c8c1f0e3a59f879102eb847"
+    },
+    {
+      "id": "new02",
+      "path": "examples/references/new02.mp3",
+      "duration_seconds": 33.81,
+      "curated_singing_clips": 5,
+      "provenance": "User-supplied recording; cleaned, singing-only training phrases in chronological order with 150 ms separators.",
+      "sha256": "d0092f1d22e8b45ee1936295a114853e0ecc6a4f3576ee3e564f4aab5173b16c"
+    },
+    {
+      "id": "new03",
+      "path": "examples/references/new03.mp3",
+      "duration_seconds": 136.8,
+      "curated_singing_clips": 21,
+      "provenance": "User-supplied recording; cleaned, singing-only training phrases in chronological order with 150 ms separators.",
+      "sha256": "3d701884fd719c1ea8654a8fd0202164d0897f0f1edce2ebff9c797f5af2926a"
+    },
+    {
+      "id": "new04",
+      "path": "examples/references/new04.mp3",
+      "duration_seconds": 59.17,
+      "curated_singing_clips": 11,
+      "provenance": "User-supplied recording; cleaned, singing-only training phrases in chronological order with 150 ms separators.",
+      "sha256": "6a07d0700ed10c4187beda2620c2c0319d742a6931e40d601339770cd8a22261"
+    }
+  ],
+  "covers": [
+    {
+      "path": "examples/covers/symphony.mp3",
+      "description": "20-second generated Symphony excerpt with adaptive effects; existing register arrangement, not the revised continuity planner."
+    },
+    {
+      "path": "examples/covers/trampoline.mp3",
+      "description": "8-second excerpt containing the confirmed harmonic-guide repair."
+    }
+  ],
+  "media_license": "Example media is separate from the MIT code license; composition and recording rights are not granted by the code license."
+}

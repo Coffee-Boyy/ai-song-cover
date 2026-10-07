@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-cover-pipeline"
+version = "0.1.0"
+description = "Reference preparation, RVC training and source-adaptive singing covers"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = "MIT"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2", "soundfile>=0.12,<1"]
+
+[project.optional-dependencies]
+audio = ["librosa>=0.10.2,<0.12", "pyloudnorm>=0.1.1,<0.3", "praat-parselmouth>=0.4.6,<0.5", "pedalboard>=0.9.17,<1", "swift-f0>=0.3,<0.4", "soxr>=0.5,<2"]
+separator = ["audio-separator==0.47.0"]
+
+[project.scripts]
+voice-cover = "voice_cover.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["voice_cover*"]
+
+[tool.setuptools.package-data]
+voice_cover = ["default_profile.json"]
